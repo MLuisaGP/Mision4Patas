@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,body{
+    font-family: "Montserrat", sans-serif;
+}
+h1{
+    font-family: 'BoldenVan', cursive;
+    -webkit-text-stroke: 1px #271f45;
+}
+.bg-blanco{
+    background-color: #FFFFFF;
+}
+.txt-blanco{
+    color: #FFFFFF;
+}
+.bg-azul_claro{
+    background-color: #93C3E6;
+}
+.txt-azul_claro{
+    color: #93C3E6;
+}
+.bg-morado_oscuro{
+    background-color: #271f45;
+}
+.txt-morado_oscuro{
+    color: #271f45;
+}
+.border-morado_oscuro{
+    border-color: #271f45;
+}
+.bg-amarillo_claro{
+    background-color: #EEC373;
+}
+.txt-amarillo_claro{
+    color: #EEC373;
+}
