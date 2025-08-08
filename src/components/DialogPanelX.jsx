@@ -5,17 +5,17 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 
 import LogoMision from '../assets/logo_M4P.png'
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+    { name: 'Product', href: '#' },
+    { name: 'Features', href: '#' },
+    { name: 'Marketplace', href: '#' },
+    { name: 'Company', href: '#' },
 ]
 
 
 export default function DialogPanelX() {
     const { mobileMenuOpen, setMobileMenuOpen } = useContext(MobileMenuOpenContext);
     return (
-        <Dialog  open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
             <div className="fixed inset-0 z-50" />
             <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                 <div className="flex items-center justify-between">

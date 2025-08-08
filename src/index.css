@@ -3,12 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'BoldenVan';
+  src: url('./assets/fonts/BoldenVan.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 *,body{
     font-family: "Montserrat", sans-serif;
 }
 h1{
     font-family: 'BoldenVan', cursive;
-    -webkit-text-stroke: 1px #271f45;
+    
 }
 .bg-blanco{
     background-color: #FFFFFF;
@@ -16,12 +22,26 @@ h1{
 .txt-blanco{
     color: #FFFFFF;
 }
+.border-blanco{
+    border-color: #FFFFFF;
+}
+.txt-border-blanco{
+    -webkit-text-stroke: 1px #FFFFFF;
+}
+
 .bg-azul_claro{
     background-color: #93C3E6;
 }
 .txt-azul_claro{
     color: #93C3E6;
 }
+.border-azul_claro{
+    border-color: #93C3E6;
+}
+.txt-border-azul_claro{
+    -webkit-text-stroke: 1px #93C3E6;
+}
+
 .bg-morado_oscuro{
     background-color: #271f45;
 }
@@ -31,9 +51,22 @@ h1{
 .border-morado_oscuro{
     border-color: #271f45;
 }
+.txt-border-morado_oscuro{
+    -webkit-text-stroke: 1px #271f45;
+}
+
 .bg-amarillo_claro{
     background-color: #EEC373;
 }
 .txt-amarillo_claro{
     color: #EEC373;
+}
+.hovertxt-amarillo_claro:hover{
+    color: #EEC373;
+}
+.border-amarillo_claro{
+    border-color: #EEC373;
+}
+.txt-border-amarillo_claro{
+    -webkit-text-stroke: 1px #EEC373;
 }

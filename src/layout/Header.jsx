@@ -6,23 +6,19 @@ import DialogPanelX from '../components/DialogPanelX';
 import { MobileMenuOpenContext } from '../context/mobileMenuOpenContext';
 import Enlaces from '../components/Enlaces';
 import LoginBtn from '../components/LoginBtn.JSX';
-const navigation = [
-    { name: 'Inicio', href: '#' },
-    { name: 'Adopciones', href: '#' },
-    { name: 'Donativos', href: '#' },
-    { name: 'Contactanos', href: '#' },
-]
+import { navigation } from '../js/navegacionlinks';
+
 
 export default function Header() {
     const { setMobileMenuOpen } = useContext(MobileMenuOpenContext);
     return (
-        <header class="sticky top-0 left-0 z-50 w-full bg-white shadow-md">
-            <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 lg:py-4">
+        <header className="sticky top-0 left-0 z-50 w-full bg-white shadow-md">
+            <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 lg:py-4">
 
                 {/* <!-- Logo --> */}
-                <div class="flex-shrink-0">
+                <div className="flex-shrink-0">
                     <a href="#">
-                        <img src={LogoMision} alt="Logo de la empresa" class="h-20 w-auto" />
+                        <img src={LogoMision} alt="Logo de la empresa" className="h-20 w-auto" />
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -36,14 +32,14 @@ export default function Header() {
                     </button>
                 </div>
                 {/* <!-- Navegación (centro) --> */}
-                <nav class="hidden lg:flex space-x-6 text-sm font-medium">
+                <nav className="hidden lg:flex space-x-6 text-sm font-medium">
                     {navigation.map((item) => (
-                        <Enlaces item={item}></Enlaces>
+                        <Enlaces key={item.id} item={item}></Enlaces>
                     ))}
                 </nav>
 
                 {/* <!-- Login (derecha) --> */}
-                <div class="hidden lg:flex">
+                <div className="hidden lg:flex">
                     <LoginBtn />
                 </div>
             </div>

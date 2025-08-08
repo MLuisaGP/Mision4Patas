@@ -1,8 +1,8 @@
 import './App.css'
 import Header from './layout/Header'
-import HeaderInicio from './components/HeaderInicio'
 import { MobileMenuOpenProvider } from './providers/MobileMenuOpenProvider'
-import Home from './Pages/Home'
+import Home from './Pages/Home/Home'
+import Footer from './layout/Footer'
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <MobileMenuOpenProvider>
       <Header/>
       <Home/>
-      <h1>HOLA</h1>
+      <Footer/>
     </MobileMenuOpenProvider>
   )
 }
